@@ -1,10 +1,10 @@
-import { PRODUCT_LIST } from "./constant";
+import { SET_PRODUCT_LIST } from "./constant";
 
 export const productData = (state = [], action) => {
-    console.warn("action is called ", action);
+    console.warn("action is called ", action.data);
     switch (action.type) {
-        case PRODUCT_LIST:
-            return [...state, action.data];
+        case SET_PRODUCT_LIST:
+            return [...action.data];
         default:
             return state;
     }
