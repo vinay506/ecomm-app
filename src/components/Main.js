@@ -35,7 +35,7 @@ const Main = () => {
                     <img className="img" src={item.image} alt={item.name} />
                     <p>{item.price}</p>
                     <p>{item.color}</p>
-                    <div>
+                    <div className="product-btn">
                         <button onClick={()=>dispatch(addToCard(item))}>Add To Cart</button>
                         <button onClick={()=>dispatch(removeFromCard(item.name))}>Remove From Cart</button>
                     </div>

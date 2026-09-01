@@ -73,3 +73,10 @@
   object-fit: cover;
   margin-left: 20px;
 }
+
+.product-container .product-btn   {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  
+}
