@@ -80,3 +80,39 @@
   margin-right: 10px;
   
 }
+.logo{
+  float: left;
+  padding: 20px;
+  margin: 0px;
+}
+.cart-page-container{
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.cart-page-container table {
+  flex:65%;
+  border-collapse: collapse;
+}
+.cart-page-container table td {
+  border: 1px solid #CCC;
+  padding: 15px;
+}
+
+.price-details {
+  flex:35%;
+  margin:0px 30px;
+}
+.price-details .adjust-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.price-details .adjust-price  span {
+  font-size: 20px;
+}

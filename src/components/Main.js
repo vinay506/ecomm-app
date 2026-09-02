@@ -16,7 +16,7 @@ const Main = () => {
     dispatch(addToCard(product));
   };
     const onRemoveClick = () => {
-    dispatch(removeFromCard(product.name));
+    dispatch(removeFromCard(product.id));
   };
     const onEmptyClick = () => {
     dispatch(emptyCard());
@@ -37,7 +37,7 @@ const Main = () => {
                     <p>{item.color}</p>
                     <div className="product-btn">
                         <button onClick={()=>dispatch(addToCard(item))}>Add To Cart</button>
-                        <button onClick={()=>dispatch(removeFromCard(item.name))}>Remove From Cart</button>
+                        <button onClick={()=>dispatch(removeFromCard(item.id))}>Remove From Cart</button>
                     </div>
                   </div>  
                 )}
